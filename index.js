@@ -24,7 +24,7 @@
     return function (styles) {
       return {
         render: function (h) {
-          h(tagName, { staticStyle: styles }, leaf ? null : this.$slots.default)
+          return h(tagName, { staticStyle: styles }, leaf ? null : this.$slots.default)
         }
       }
     }
